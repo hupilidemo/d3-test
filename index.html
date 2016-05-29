@@ -20,7 +20,7 @@
 			var labelAnchorLinks = [];
 			var links = [];
 
-			for(var i = 0; i < 30; i++) {
+			/*for(var i = 0; i < 30; i++) {
 				var node = {
 					label : "node " + i
 				};
@@ -50,7 +50,11 @@
 			};
 			
 			console.log(JSON.stringify(labelAnchors));
-			console.log(JSON.stringify(labelAnchorLinks));
+			console.log(JSON.stringify(labelAnchorLinks));*/
+			
+			labelAnchors = [{"node":{"label":"Pili Hu"}},{"node":{"label":"Tianyi Chao"}},{"node":{"label":"Roselyn DU"}},{"node":{"label":"Chloe Zhao"}}];
+			labelAnchorLinks = [{"source":0,"target":1,"weight":1},{"source":0,"target":2,"weight":1},{"source":0,"target":3,"weight":1},{"source":2,"target":3,"weight":1}];
+			
 
 			var force = d3.layout.force().size([w, h]).nodes(nodes).links(links).gravity(1).linkDistance(50).charge(-3000).linkStrength(function(x) {
 				return x.weight * 10
