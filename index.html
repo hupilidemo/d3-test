@@ -48,6 +48,8 @@
 					weight : 1
 				});
 			};
+			
+			console.log(labelAnchorLinks);
 
 			var force = d3.layout.force().size([w, h]).nodes(nodes).links(links).gravity(1).linkDistance(50).charge(-3000).linkStrength(function(x) {
 				return x.weight * 10
