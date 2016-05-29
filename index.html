@@ -49,8 +49,14 @@
 				});
 			};
 			
-			console.log(JSON.stringify(links));
+			
+			nodes = [{"label":"Pili Hu"},{"label":"Tianyi Chao"},{"label":"Roselyn DU"},{"label":"Chloe Zhao"}];
+			labelAnchors = [{"node":{"label":"Pili Hu"}},{"node":{"label":"Tianyi Chao"}},{"node":{"label":"Roselyn DU"}},{"node":{"label":"Chloe Zhao"}}];
+			links = [{"source":0,"target":1,"weight":1},{"source":0,"target":2,"weight":1},{"source":0,"target":3,"weight":1},{"source":2,"target":3,"weight":1}];
+			labelAnchorLinks = [{"source":0,"target":1,"weight":1},{"source":0,"target":2,"weight":1},{"source":0,"target":3,"weight":1},{"source":2,"target":3,"weight":1}]
+			
 			console.log(JSON.stringify(nodes));
+			console.log(JSON.stringify(links));
 			console.log(JSON.stringify(labelAnchors));
 			console.log(JSON.stringify(labelAnchorLinks));
 			
